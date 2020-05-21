@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Family Food Plan</title>
+      <link rel="icon" type="image/jpg" href="Images/logo.png">
+      <link rel="stylesheet" type="text/css" href="wesbsite.css">
+   </head>
+   <body>
+      
+      
+      <h1 style= "text-align: center;font-size: 50px;color: black"><strong>Family Food Planner</strong></h1>
+      
+      
+      <button style= "font-size: 30px;color: white; margin-left:12%;background-color: black;" type="button" > Grocery List</button>
+      <button style= "font-size: 30px;color: white; margin-left:12%; background-color: black;" type="button" onclick="document.location = 'alternate.html'">Search for Nearby Leftovers</button>
+      <button style= "font-size: 30px;color: white; margin-left:12%; background-color: black;" type="button" onclick="document.location = 'alternate2.html'">Post Leftovers</button>
+      
+      <br>
+
+      <p style= "font-size: 20px;color: black;float:right">This website will help plan you or your family's food plan based on your food prefrences. Just enter how many people you are planning for and how many times you eat out to get a grocery list and example recipes.</p>
+      
+      <p style= "font-size: 20px;color: black;">For how many people do you want to plan your meals?</p>
+      <input style="width:200px;" type="range" name="numPeople" id="numPeopleInputId" value="4" min="1" max="10" oninput="numPeopleOutputId.value = numPeopleInputId.value">
+      <output name="numPeopleOutputName" id="numPeopleOutputId">4</output>
+
+      <p style= "font-size: 20px;color: black; ">How often do you eat out in a week?</p>
+      <input style="width:200px" type="range" name="numEatOut" id="numOutInputId" value="2" min="0" max="21" oninput="numEatOutOutputId.value = numOutInputId.value">
+      <output name="numPeopleOutputName" id="numEatOutOutputId">2</output>
+
+      <p style= "font-size: 20px;color: black;">What dietary restrictions do you or any other family members have?</p>
+      <input style= "font-size: 15px"  type="text" name="dietaryRestrictions">
+
+      <p style= "font-size: 20px;color: black;">What items are "must-haves"?</p>
+      <input  style= "font-size: 15px" type="text" name="dietaryRestrictions">
+
+      <br>
+      <br>
+      <button style=" border: 0;
+      line-height: 2.5;
+      padding: 0 20px;
+      font-size: 1rem;
+      text-align: center;
+      color: white;
+      border-radius: 10px;
+      background-color: black;" type="button" onclick="displayResults()">Submit</button>
+   </body>
+</html>
